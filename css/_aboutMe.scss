@@ -1,0 +1,54 @@
+.aboutMe {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 450px;
+    
+}
+.aboutMe-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    &__item {
+        flex-basis: 60%;
+        
+    }
+
+    &__item:first-child {
+        position: absolute;
+       left: -200px;
+    }
+
+    &__item:last-child {
+       margin-left: auto;
+       display: flex;
+       flex-direction: column;
+       position: relative;
+       z-index: 10;
+       background-color: rgba(255, 255, 255, 0.9);
+       padding: 10px;
+       border-radius: 5px;
+       
+    }
+    &__btn {
+        width: 100%;
+        .main-btn {
+            a {
+                margin-left: auto;
+            }
+        }
+    }
+
+    &__img {
+        img {
+            max-width: 650px;
+        }
+    }
+
+    &__text {
+        color: #494949;
+        font-size: 0.9rem;
+    }
+
+  
+}
