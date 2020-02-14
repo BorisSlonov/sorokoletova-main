@@ -265,6 +265,12 @@ body {
   color: #494949;
 }
 
+.bold.black {
+  font-weight: 700;
+  color: #000;
+  font-size: 1.1rem;
+}
+
 .header {
   position: fixed;
   width: 100%;
@@ -312,7 +318,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 90px;
+  height: 60px;
 }
 
 .header__menu {
@@ -769,6 +775,11 @@ body {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .offer__text {
+    text-align: center;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
   .offer__img {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -779,6 +790,7 @@ body {
 
 .last-offer .offer__text {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 .last-offer .offer__btn {
@@ -916,12 +928,25 @@ body {
   border-radius: 5px;
 }
 
-.aboutMe-container__btn {
+.aboutMe-container__btn .main-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  margin-top: 0;
 }
 
 .aboutMe-container__btn .main-btn a {
   margin-left: auto;
+  width: 100%;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
 }
 
 .aboutMe-container__img img {
@@ -931,6 +956,25 @@ body {
 .aboutMe-container__text {
   color: #494949;
   font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .aboutMe-container__btn .main-btn {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .aboutMe-container__btn .main-btn a {
+    margin-top: 15px;
+  }
+  .aboutMe-container__item .h2-container__img-container {
+    display: none;
+  }
 }
 
 .situation {
@@ -1544,6 +1588,8 @@ body {
   padding-bottom: 25px;
   padding-top: 25px;
   background-color: #f4f4f4;
+  position: relative;
+  z-index: 50;
 }
 
 .footer-container {
@@ -1597,6 +1643,40 @@ body {
 .footer-item .brand {
   color: #757575;
   font-size: 0.9rem;
+}
+
+.footer-item .brand.last {
+  text-align: right;
+  margin-top: 25px;
+  font-size: 0.9rem;
+}
+
+.footer-item .brand.prelast {
+  text-align: left;
+  margin-top: 25px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 794px) {
+  .footer-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .brand {
+    text-align: center;
+  }
+  .footer-item:nth-child(2) {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+  .footer-item .brand.prelast {
+    text-align: center;
+  }
+  .footer-item .brand.last {
+    text-align: center;
+  }
 }
 
 @media (max-width: 425px) {

@@ -29,6 +29,10 @@
 @media (max-width: 742px) {
     .offer {
         flex-direction: column;
+        &__text {
+            text-align: center;
+            flex-basis: 100%;
+        }
         &__img {
             margin-top: 10px;
             margin-bottom: 10px;
@@ -42,6 +46,7 @@
 
         &__text {
             font-size: 1.5rem;
+            text-align: center;
         }
         &__btn {
             width: 270px;
