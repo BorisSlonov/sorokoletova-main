@@ -1401,6 +1401,10 @@ body {
   text-align: center;
 }
 
+.cooperation__item.d-none {
+  display: none;
+}
+
 .cooperation__arrow {
   width: 100%;
   max-width: 80px;
@@ -1446,6 +1450,9 @@ body {
   }
   .cooperation__item {
     margin: 15px 0 20px;
+  }
+  .cooperation__item.d-none {
+    display: block;
   }
   .cooperation__arrow {
     -webkit-transform: rotate(90deg);
