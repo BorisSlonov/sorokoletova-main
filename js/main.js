@@ -55,4 +55,25 @@ $(function () {
         
     });
 
+
+       //modal
+  
+       $(".modalbox").fancybox();
+       $("#urgent-form-container").submit(function () {
+           return false;
+       });
+       $("#form2-btn").on("click", function () {
+
+           // тут дальнейшие действия по обработке формы
+           // закрываем окно, как правило делать это нужно после обработки данных
+           $("").fadeOut("slow", function () {
+               $(this).before("");
+               setTimeout("$.fancybox.close()", 500);
+           });
+       });
+
+
+   $('#urgent-form-container').submit(function (e) {
+       e.preventDefault();
+   });
 });

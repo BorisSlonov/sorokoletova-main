@@ -726,6 +726,117 @@ body {
   }
 }
 
+#urgent-form-container {
+  display: none;
+}
+
+.urgent-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 500px;
+  background-color: #fff;
+  border: 1px solid #213869;
+  padding: 25px;
+  position: relative;
+  font-size: 0.9rem;
+}
+
+.urgent-form__title {
+  background-color: #213869;
+  color: #fff;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  max-width: 500px;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.urgent-form__first-point {
+  font-weight: 700;
+}
+
+.urgent-form__first-point ul {
+  margin-top: 25px;
+  position: relative;
+}
+
+.urgent-form__first-point ul::before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/step/step1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 80px;
+  height: 80px;
+  top: -20px;
+}
+
+.urgent-form__span-num {
+  display: block;
+  font-weight: 700;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.urgent-form__span-num::before {
+  content: '';
+  position: absolute;
+  background-image: url(../img/step/step2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  top: -20px;
+}
+
+.urgent-form .first-point-title {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  color: #aba5a5;
+}
+
+.urgent-form__text {
+  margin-top: 100px;
+}
+
+.urgent-form__text-offer {
+  display: inline-block;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.urgent-form__text-offer span {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.urgent-form .main-btn a {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 566px) {
+  .urgent-form .first-point-title {
+    margin-top: 50px;
+  }
+  .urgent-form__text-offer {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+}
+
 .offer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1597,7 +1708,7 @@ body {
   padding-top: 25px;
   background-color: #f4f4f4;
   position: relative;
-  z-index: 50;
+  z-index: 1;
 }
 
 .footer-container {
