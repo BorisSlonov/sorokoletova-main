@@ -697,6 +697,12 @@ body {
   margin-top: 15px;
 }
 
+.urgent-container__list li img {
+  display: inline-block;
+  margin-right: 5px;
+  max-width: 20px;
+}
+
 .urgent-container .list-bold {
   font-weight: 700;
 }

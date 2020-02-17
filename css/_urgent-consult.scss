@@ -10,6 +10,7 @@
 
     &__item {
         flex-basis: 45%;
+        
     }
 
     &__item:nth-child(2) {
@@ -32,8 +33,16 @@
     }
 
     &__list {
+      
         li {
+            
             margin-top: 15px;
+
+            img {
+                display: inline-block;
+                margin-right: 5px;
+                max-width: 20px;
+            }
         }
     }
 
