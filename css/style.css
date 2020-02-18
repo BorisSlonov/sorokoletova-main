@@ -1680,32 +1680,104 @@ body {
   margin-top: 50px;
 }
 
-.partners {
+.example-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 -8px;
 }
 
-.partners__item {
-  -ms-flex-preferred-size: 33.333%;
-      flex-basis: 33.333%;
-  min-width: 250px;
-  padding: 0 -10px;
-  margin-top: 25px;
+.example-item {
+  margin: 15px 8px;
+  -ms-flex-preferred-size: 33.3333%;
+      flex-basis: 33.3333%;
+  width: 100%;
+  min-width: 340px;
+  margin: 25px 0;
 }
 
-.partners__item img {
-  max-width: 320px;
+.example-item .regard {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  display: none;
 }
 
-.partners__text {
-  font-size: 0.9rem;
+.example-item h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.img-prew {
+  height: 200px;
+  width: 100%;
+  max-width: 450px;
+}
+
+.fancybox-image {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.blue-search {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+
+.blue-search .search {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 450px;
+  width: 100%;
+  height: 200px;
+  -webkit-transition: visibility 250ms ease, opacity 250ms ease;
+  transition: visibility 250ms ease, opacity 250ms ease;
+  opacity: 0;
+}
+
+.blue-search .search:hover {
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: visibility 250ms ease, opacity 250ms ease;
+  transition: visibility 250ms ease, opacity 250ms ease;
+}
+
+.blue-search a .span-container {
+  font-size: 1.5rem;
+  width: 100%;
+  display: block;
+  text-align: center;
+  line-height: 200px;
+}
+
+.blue-search a .span-container span {
+  border-bottom: 1px dashed #213869;
+  text-transform: uppercase;
+  color: #213869;
+}
+
+@media (max-width: 768px) {
+  .example-item .regard {
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.658);
+  }
 }
 
 .footer {
